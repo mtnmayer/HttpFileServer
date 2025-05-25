@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpFileServer", "HttpFileServer\HttpFileServer.csproj", "{1BB7AD6B-D9F0-419E-A4D8-72D62AB9822C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpFileServerTest", "HttpFileServerTest\HttpFileServerTest.csproj", "{FC2CD3BC-CCAA-44D6-8909-71452A8B0AFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BB7AD6B-D9F0-419E-A4D8-72D62AB9822C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB7AD6B-D9F0-419E-A4D8-72D62AB9822C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB7AD6B-D9F0-419E-A4D8-72D62AB9822C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB7AD6B-D9F0-419E-A4D8-72D62AB9822C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2CD3BC-CCAA-44D6-8909-71452A8B0AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2CD3BC-CCAA-44D6-8909-71452A8B0AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2CD3BC-CCAA-44D6-8909-71452A8B0AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2CD3BC-CCAA-44D6-8909-71452A8B0AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3B8D0C7-F05C-4CC3-8CE6-76C7766EACA7}
+	EndGlobalSection
+EndGlobal
