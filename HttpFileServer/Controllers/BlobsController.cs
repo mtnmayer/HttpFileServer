@@ -33,8 +33,8 @@ namespace HttpFileServer.Controllers
                     var e when e.Contains("ID") => BadRequest(new { error = e }),
                     var e when e.Contains("Content-Length") => BadRequest(new { error = e }),
                     var e when e.Contains("exceeds maximum") => BadRequest(new { error = e }),
-                    var e when e.Contains("Total size") => StatusCode(413, new { error = e }),
-                    var e when e.Contains("storage space") => StatusCode(507, new { error = e }),
+                    var e when e.Contains("Total size") => BadRequest(new { error = e }),
+                    var e when e.Contains("storage space") => BadRequest(new { error = e }),
                     _ => StatusCode(500, new { error = error })
                 };
             }
