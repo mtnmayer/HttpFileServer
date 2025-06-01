@@ -171,6 +171,7 @@ namespace HttpFileServer.Services
             if (headerError != null)
                 return (false, headerError);
 
+            // RON: calculation of headers' size should be as plain text, and not as their json representation
             var headersSize = JsonSerializer.Serialize(storedHeaders).Length;
             var totalSize = contentLength + headersSize;
 
@@ -207,8 +208,10 @@ namespace HttpFileServer.Services
                 };
 
                 _blobIndex[id] = metadata;
+                // RON: nice work with Interlocked, well done!
                 Interlocked.Add(ref _diskUsage, sizeChange);
 
+                // RON: point to think about: what if only this action fails? no need to change the code.
                 await SaveMetadataAsync();
                 return (true, null);
             }
