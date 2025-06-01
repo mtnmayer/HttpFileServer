@@ -65,6 +65,7 @@ namespace HttpFileServer.Controllers
                 Response.Headers[header.Key] = header.Value;
             }
 
+            // RON: content type can be calculated once when storing it, rather than calculating it while serving.
             if (!metadata.Headers.ContainsKey("Content-Type"))
             {
                 var contentType = MimeTypeMap.GetMimeType(Path.GetExtension(id)) ?? "application/octet-stream";
